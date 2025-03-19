@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- font import from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon / logo of website -->
+    <link rel="icon" type="image/x-icon" href="/graphics/logo.png" />
+
+    <title>RACKS.INC</title>
+  </head>
+  <body>
+    <!-- whole website container -->
+    <!-- used to store the entire website's contents so that i can add overall margins for the content at once and prevents me having to do it individually, at each section -->
+    <!-- I also make use of containers consistently that wrap around entire sections in order for me to add consistent margin or padding round the section and to easier align the items within -->
+    <div class="whole-body">
+      <header>
+        <!-- navbar -->
+        <nav>
+          <!-- a container for the navbar links -->
+          <div class="nav-links">
+            <ul>
+              <li>
+                <a href="index.html" class="hover-underline-animation">Home</a>
+              </li>
+              <li><a href="#" class="hover-underline-animation">Summary</a></li>
+            </ul>
+            <h2>RACKS.INC</h2>
+            <ul>
+              <li>
+                <a href="#" class="hover-underline-animation">Resources</a>
+              </li>
+              <li><a href="#" class="hover-underline-animation">Basics</a></li>
+            </ul>
+          </div>
+
+          <!-- navbar hamburger for mobile view -->
+          <!-- <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div> -->
+        </nav>
+
+        <div class="hero-section">
+          <!-- i have decided to split the header section into 2, so that i can use flexbox to easily align them vertically for the mobile view and so that it's easy to centre it -->
+          <div class="hero-left">
+            <h1>
+              LEARN TO MANAGE <span class="pink">YOUR</span> MONEY AND NOT LET
+              IT MANAGE <span class="yellow">YOU</span>
+            </h1>
+            <button class="pink-btn"><span>GET STARTED</span></button>
+          </div>
+
+          <div class="hero-right">
+            <img
+              src="/graphics/bar-chart.png"
+              alt="linear gradient bar chart"
+            />
+          </div>
+        </div>
+      </header>
+
+      <div class="section-1-container">
+        <!-- this is section1 -->
+        <h1 class="section1-header">WHY LEARN ?</h1>
+        <div class="section-1">
+          <div class="section1-left">
+            <img
+              src="./graphics/illustration1.png"
+              alt="playfull illustrationn of cow with money"
+            />
+          </div>
+          <div class="section1-right">
+            <div class="circle-top-row">
+              <div class="circle">
+                <p class="circle-text">
+                  Building strong habits early which benefits you in the long
+                  run.
+                </p>
+              </div>
+              <div class="circle">
+                <p class="circle-text">
+                  Achieving financial indepedendence because you know what
+                  you're doing.
+                </p>
+              </div>
+            </div>
+
+            <div class="circle">
+              <p class="circle-text circle-third">
+                Preparing for real world changes as you transition from a teen
+                into a young adult.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section 2 -->
+      <div class="section-2-container">
+        <h1 class="section-2-header">TOPICS</h1>
+        <div class="section-2">
+          <div class="card-topic">
+            <img
+              src="./graphics/illustration6.png"
+              alt="calendar illustration"
+            />
+            <h3 class="topic-title">Budgeting</h3>
+          </div>
+          <div class="card-topic">
+            <img
+              src="./graphics/illustration2.png"
+              alt="calendar illustration"
+            />
+            <h3 class="topic-title">Saving & Spending</h3>
+          </div>
+          <div class="card-topic">
+            <img
+              src="./graphics/illustration3.png"
+              alt="calendar illustration"
+            />
+            <h3 class="topic-title">Credit & Debt management</h3>
+          </div>
+          <div class="card-topic">
+            <img
+              src="./graphics/illustration5.png"
+              alt="calendar illustration"
+            />
+            <h3 class="topic-title">Taxes</h3>
+          </div>
+          <div class="card-topic">
+            <img
+              src="./graphics/illustration4.png"
+              alt="calendar illustration"
+            />
+            <h3 class="topic-title">Insurance</h3>
+          </div>
+          <div class="card-topic">
+            <img
+              src="./graphics/illustration7.png"
+              alt="calendar illustration"
+            />
+            <h3 class="topic-title">Borrowing</h3>
+          </div>
+          <div class="card-topic">
+            <img
+              src="./graphics/illustration8.png"
+              alt="calendar illustration"
+            />
+            <h3 class="topic-title">Bank Accounts</h3>
+          </div>
+        </div>
+      </div>
+      <!-- footer section -->
+      <div class="footer-container">
+        <div class="footer-contents">
+          <div class="footer-left">
+            <h3 class="business-name">RACKS.INC</h3>
+            <p>All rights reserved</p>
+            <img
+              src="./graphics/illustration9.png"
+              alt="stack of coins illustration"
+            />
+          </div>
+          <div class="footer-right">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="#">Basics</a></p>
+            <p><a href="#">Summary</a></p>
+            <p><a href="#">Resources</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- copyright -->
+      <p class="copyright">Copyright 2025 - Ropafadzo Mugadza</p>
+    </div>
+
+    <!-- javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
