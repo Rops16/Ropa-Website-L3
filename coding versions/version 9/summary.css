@@ -1,0 +1,278 @@
+/* general styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 100%;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* storing colours */
+:root {
+    --background-main: #1B1917;
+    --background-secondary: #282727;
+    --main-text: #fff;
+    --secondary-text: #CACACA;
+    --pink-text: #EE4266;
+    --yellow-text: #FFD23F;
+    --green-text: #53FEBB;
+}
+
+body {
+    background-color: var(--background-main);
+    margin: 0 auto;
+    padding: 0 5vw;
+    /* Use viewport width for flexible spacing */
+    max-width: 1200px;
+    /* Prevents content from being too stretched on large screens*/
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0;
+    align-items: center;
+}
+
+.title-name {
+    color: var(--green-text);
+    letter-spacing: 8px;
+    cursor: pointer;
+}
+
+.mobile-view {
+    display: none;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links ul li {
+    padding: 0 40px;
+    list-style: none;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--secondary-text);
+    letter-spacing: 3px;
+    transition: all 2s ease-out;
+}
+
+/* hamburger styling for resposnive view */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 10px 0;
+    align-items: end;
+}
+
+.bar {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-color: var(--main-text);
+}
+
+/* below is the code to control the hover animation effects for the different page links */
+.nav-links ul li a:hover {
+    transform: translateY(-5px);
+    color: var(--main-text);
+
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-text);
+
+    transition: transform 0.35s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+}
+
+.hover-underline-animation.center::after {
+    transform-origin: bottom center;
+}
+
+.hover-underline-animation.center:hover::after {
+    transform-origin: bottom center;
+}
+
+/* footer styling */
+.footer-container {
+    background-color: var(--background-secondary);
+    margin: 30px 0;
+    padding: 50px 100px;
+    border: none;
+    border-radius: 50px;
+}
+
+.footer-contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.business-name {
+    color: var(--green-text);
+    letter-spacing: 10px;
+}
+
+.footer-left img {
+    width: 120px;
+}
+
+.footer-left p {
+    padding: 20px 0;
+    color: var(--secondary-text);
+}
+
+.footer-right p a {
+    text-decoration: none;
+    color: var(--secondary-text);
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+.footer-right p {
+    margin: 10px 0;
+
+}
+
+/* simple image hover effect */
+.footer-right p a:hover {
+    color: var(--main-text);
+}
+
+/* copyright */
+.copyright {
+    color: var(--secondary-text);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+/* mobile view */
+@media (max-width: 968px) {
+
+    /* navbar styling */
+    .nav-links.active {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        left: 0;
+        /* Hide menu initially */
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+    }
+
+    /* Show menu when active */
+    .nav-links.active {
+        display: flex;
+
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .mobile-view {
+        display: block;
+        padding-top: 30px;
+    }
+
+    .desktop-view {
+        display: none;
+    }
+
+    .nav-links {
+        position: fixed;
+        left: -200%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: var(--background-main);
+        box-shadow: 13px 12px 29px -7px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 13px 12px 29px -7px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 13px 12px 29px -7px rgba(0, 0, 0, 0.75);
+        transition: 0.3s;
+    }
+
+    .section1 .first-header {
+        padding-top: 120px;
+    }
+
+    .second-part-nav {
+        flex-direction: column;
+    }
+
+    .nav-links ul {
+        margin: 16px 0;
+    }
+
+    /* section 1 styles */
+    .section-content img {
+        max-width: 400px;
+    }
+
+
+    /* footer changes for mobile view */
+    .footer-contents {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
