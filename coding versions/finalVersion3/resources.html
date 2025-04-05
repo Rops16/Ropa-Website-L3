@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/resources.css" />
+
+    <!-- font import from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon / logo of website -->
+    <link rel="icon" type="image/x-icon" href="/graphics/logo.png" />
+
+    <title>RACKS.INC</title>
+  </head>
+  <body>
+    <!-- whole website container -->
+    <!-- used to store the entire website's contents so that i can add overall margins for the content at once and prevents me having to do it individually, at each section -->
+    <!-- I also make use of containers consistently that wrap around entire sections in order for me to add consistent margin or padding round the section and to easier align the items within -->
+    <div class="whole-body">
+      <!-- navbar -->
+      <nav>
+        <!-- a container for the navbar links -->
+        <div class="nav-links">
+          <h2 class="mobile-view title-name">RACKS.INC</h2>
+          <ul class="menu">
+            <li>
+              <a href="index.html" class="hover-underline-animation">Home</a>
+            </li>
+            <li>
+              <a href="/summary.html" class="hover-underline-animation"
+                >Summary</a
+              >
+            </li>
+          </ul>
+          <h2 class="desktop-view title-name">RACKS.INC</h2>
+          <ul class="second-part-nav">
+            <li>
+              <a href="/resources.html" class="hover-underline-animation"
+                >Resources</a
+              >
+            </li>
+            <li>
+              <a href="./basics.html" class="hover-underline-animation"
+                >Basics</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- navbar hamburger for mobile view -->
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+
+      <!-- there is only 1 main section for the contents of this page -->
+      <div class="main-section">
+        <h1>Resources</h1>
+        <div class="slideshow-container">
+          <!-- Full-width slides/quotes -->
+          <div class="mySlides">
+            <h3>Apps</h3>
+            <ul>
+              <li>Mint</li>
+              <li>Every Dollar</li>
+              <li>Rocket Money</li>
+            </ul>
+          </div>
+
+          <div class="mySlides">
+            <h3>Websites</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.moneyhub.co.nz/money-tips-for-kids.html"
+                  target="_blank"
+                  >MoneyHub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.moneyfit.org/budget-calculator-for-teens/"
+                  target="_blank"
+                  >MoneyFit</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://banqer.co/nz/high/junior/resources"
+                  target="_blank"
+                  >Banqer</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mySlides">
+            <h3>Youtube Videos</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=2Aosql_3vBY&list=PLvJNSf-7NfrNxtRMOGbQ_mlMwHfq56x-S"
+                  target="_blank"
+                  >Introduction to financial litercy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=4XZIv4__sQA"
+                  target="_blank"
+                  >Financial Literacy - A beginner Guide</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=BV_XkanSiHI"
+                  target="_blank"
+                  >Personal Finance Tips for teens</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Next/prev buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots/bullets/indicators -->
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <!-- footer section -->
+      <div class="footer-container">
+        <div class="footer-contents">
+          <div class="footer-left">
+            <h3 class="business-name">RACKS.INC</h3>
+            <p>All rights reserved</p>
+            <img
+              src="./graphics/stack-of-coins.png"
+              alt="stack of coins illustration"
+            />
+          </div>
+          <div class="footer-right">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="/basics.html">Basics</a></p>
+            <p><a href="/summary.html">Summary</a></p>
+            <p><a href="/resources.html">Resources</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <p class="copyright">Copyright 2025 - Ropafadzo Mugadza</p>
+    </div>
+
+    <!-- javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
