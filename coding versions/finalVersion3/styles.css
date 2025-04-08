@@ -15,6 +15,7 @@ html, body{
 html{
     scroll-behavior: smooth;
 }
+  
 /* storing colours */
 :root{
     --background-main: #1B1917;
@@ -150,20 +151,21 @@ body{
     text-decoration: none;
 }
 /* hero section button animations */
-.hero-left button {
+.hero-left .pink-btn{
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    color: var(--main-text);
+    text-decoration: none;
 }
-.hero-left button:hover  {
+.hero-left .pink-btn:hover  {
     /* padding-right: 25px; */
     background-color: var(--main-text);
     transform: translateY(-10px);
-}
-.pink-btn a:hover{
     color: var(--pink-text);
 }
+
 /* section 1 code */
 .section-1-container{
     background-color: var(--background-secondary);
